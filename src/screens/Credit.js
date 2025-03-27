@@ -6,7 +6,7 @@ import Message from '../components/Message';
 export default function Credit({navigation}) {
   return (
     <View style={styles.container}>
-      <Title text={"Credit"}></Title>
+      <Title text={"Credits"}></Title>
       <Message text={`In the realm of X's and O's, upon the grid they go,
 Where two contenders face off, in tic-tac-toe.
 A pencil mark, a battle stark, lines cross like ancient runes,
