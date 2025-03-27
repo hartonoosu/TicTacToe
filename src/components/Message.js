@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, View, StyleSheet, Dimensions} from "react-native";
+import {Text, View, StyleSheet, Dimensions, ScrollView} from "react-native";
 import colors from "../constants/color";
 
 const {width, height} = Dimensions.get('window');
@@ -7,7 +7,9 @@ const {width, height} = Dimensions.get('window');
 const Message = ({text}) => {
   return (
     <View style = {[styles.titleBox]}>
-      <Text style = {styles.titleText}>{text}</Text>
+      <ScrollView>
+        <Text style = {styles.titleText}>{text}</Text>
+      </ScrollView>
     </View>
   )
 }
@@ -24,8 +26,8 @@ const styles = StyleSheet.create({
   titleText: {
     color: "white",
     fontWeight: "bold",
-    fontSize: 20,
-    margin: 15
+    fontSize: 22,
+    margin: 25
   }
 })
   export default Message;
